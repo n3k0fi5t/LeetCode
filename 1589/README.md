@@ -40,14 +40,13 @@ Total sum: 11 + 8 = 19, which is the best that you can do.
 - 如何找到最大的request total request sum
     - reuqest sum: [starti, endi] index區間 對應的nums和
     - 使total request sum最大
-        :::warning
         - frequency map among all requests
         - 最大frequency 乘上nums中最大值
         - 2nd大frequency 乘上nums中2nd大值
         - ...
-        :::
 - 計算frequency map
     - Brute force: 每個區間都掃一次並記錄==> O(N^2)會TLE
     - prefix sum + sorting ==> O(NlogN)
         - request 區間[start, end] 可以記錄在一個vector v[start]+= 1, v[end+1]+=-1
         - prefix sum 就是該index 需要被加的次數
+    <img src="https://github.com/n3k0fi5t/LeetCode/blob/master/1589/1589.png" width="47%" height="47%">
