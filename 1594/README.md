@@ -46,6 +46,8 @@ Explanation: Maximum non-negative product is in bold (1 * 1 * -2 * -4 * 1 = 8).
         - grid[i][j] > 0==> prev_path_max * grid[i][j] will still be maximum
         - grid[i][j] < 0
             maximum will be either prev_path_max * grid[i][j] or prev_path_min * grid[i][j]
+    - time complexity: O(N^2)
+    - space complexity: O(N^2)
 
 ```cpp
 #define ll long long

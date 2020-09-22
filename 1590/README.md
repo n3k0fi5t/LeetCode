@@ -28,7 +28,6 @@ Explanation: We cannot remove a single element to get a sum divisible by 9. The 
 - 題目分析
     - total sum 減去某個subarray 後可以被p整除, 找出minimum subarray length
 
-
 1. total sum is multiple of p ==> ans = 0
 2. 假設total (sum%p = k)
     - 答案就是minimum one of subarrays whose (sum%p = k)
@@ -37,6 +36,9 @@ Explanation: We cannot remove a single element to get a sum divisible by 9. The 
         - 如果 r == k, 我們找到一個可能的subarray
         - 如果 r != k, 則要看能不能找到另一個subarray[1..j], j < m (sum%p = **-(k-r)**), 如此remaining subarray (sum%p = k-r + (-(k-r)) = 0)
     - 對於每個subarray 有相同的餘數, 我們只要記住最新的即可, 因為才會讓答案的subarray minimize
+
+- time complexity: O(N)
+- space complexity: O(N)
 
 - Source
 ```cpp=

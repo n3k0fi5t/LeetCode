@@ -50,3 +50,6 @@ Total sum: 11 + 8 = 19, which is the best that you can do.
         - request 區間[start, end] 可以記錄在一個vector v[start]+= 1, v[end+1]+=-1
         - prefix sum 就是該index 需要被加的次數
     <img src="https://github.com/n3k0fi5t/LeetCode/blob/master/1589/1589.png" width="47%" height="47%">
+
+- time complexity: O(NlogN)
+- space complexity: O(N)
