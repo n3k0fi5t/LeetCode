@@ -41,7 +41,7 @@ Explanation: It is best to choose the last 3 players. Notice that you are allowe
         - dp[i] = max(dp[i], dp[j] + score[i]) for each j in range (0,i-1)
         - time complexity O(N^2)
 
-```cpp=
+```cpp
 class Solution {
 public:
     int bestTeamScore(vector<int>& scores, vector<int>& ages) {

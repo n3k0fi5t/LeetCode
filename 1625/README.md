@@ -13,11 +13,11 @@ A string a is lexicographically smaller than a string b (of the same length) if 
 
 
 ## Constrains
-2 <= s.length <= 100
-s.length is even.
-s consists of digits from 0 to 9 only.
-1 <= a <= 9
-1 <= b <= s.length - 1
+- 2 <= s.length <= 100
+- s.length is even.
+- s consists of digits from 0 to 9 only.
+- 1 <= a <= 9
+- 1 <= b <= s.length - 1
 
 ## Example
 ```
@@ -60,7 +60,7 @@ There is no way to obtain a string that is lexicographically smaller then "24".
         - Take O(N) to generate string
         - Compleity O(N^2)
 
-```cpp=
+```cpp
 class Solution {
 public:
     set<string> st;
